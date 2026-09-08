@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KeralFit — Your Wellness, Rooted in Kerala</title>
+  <meta name="description" content="KeralFit is a holistic fitness and nutrition platform tailored for Kerala people. Discover traditional diet plans, workout routines, BMI calculators, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🌿</span>
+        <span>Keral<strong>Fit</strong></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#workouts" class="nav-link">Workouts</a></li>
+        <li><a href="#nutrition" class="nav-link">Nutrition</a></li>
+        <li><a href="#calculator" class="nav-link">Calculator</a></li>
+        <li><a href="#trainers" class="nav-link">Trainers</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-primary btn-sm">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Kerala's #1 Fitness Platform
+      </div>
+      <h1 class="hero-title">
+        Fitness Rooted in<br />
+        <span class="gradient-text">Kerala Wellness</span>
+      </h1>
+      <p class="hero-subtitle">
+        Discover personalized workout plans and authentic Kerala diet programs crafted by certified nutritionists. 
+        Achieve your health goals with traditional wisdom and modern science.
+      </p>
+      <div class="hero-cta">
+        <a href="#workouts" class="btn btn-primary btn-lg">
+          <span>Start Your Journey</span>
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#nutrition" class="btn btn-outline btn-lg">Explore Diet Plans</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="12000">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="50">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Diet Plans</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="30">0</span>
+          <span class="stat-plus">+</span>
+          <span class="stat-label">Expert Trainers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-percent">%</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card float-card card-1">
+        <span class="card-icon">🏃</span>
+        <div>
+          <div class="card-title">Today's Workout</div>
+          <div class="card-sub">45 min · Full Body</div>
+        </div>
+      </div>
+      <div class="hero-card float-card card-2">
+        <span class="card-icon">🥗</span>
+        <div>
+          <div class="card-title">Kerala Sadya Diet</div>
+          <div class="card-sub">1800 kcal · Balanced</div>
+        </div>
+      </div>
+      <div class="hero-card float-card card-3">
+        <span class="card-icon">📈</span>
+        <div>
+          <div class="card-title">Progress</div>
+          <div class="card-sub">+2.3 kg muscle gained</div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-food-visual">
+          <div class="food-plate">
+            <div class="plate-ring"></div>
+            <div class="food-item f1">🍛</div>
+            <div class="food-item f2">🥥</div>
+            <div class="food-item f3">🐟</div>
+            <div class="food-item f4">🍌</div>
+            <div class="food-item f5">🌿</div>
+            <div class="food-item f6">🫘</div>
+            <div class="center-food">🍽️</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURES ==================== -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-tag">Why KeralFit?</div>
+      <h2 class="section-title">Everything You Need to <span class="gradient-text">Thrive</span></h2>
+      <p class="section-subtitle">A complete platform built around Kerala's rich food heritage and modern fitness science.</p>
+      <div class="features-grid">
+        <div class="feature-card" data-delay="0">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #e0f7e9, #c8f0d4);">🌿</div>
+          <h3>Kerala Diet Plans</h3>
+          <p>Personalized meal plans using traditional Kerala ingredients like coconut, banana, tapioca, and seasonal greens.</p>
+        </div>
+        <div class="feature-card" data-delay="100">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #e8f0fe, #c5d8fd);">💪</div>
+          <h3>Smart Workouts</h3>
+          <p>AI-curated workout plans for all fitness levels — from beginners to seasoned athletes, at home or gym.</p>
+        </div>
+        <div class="feature-card" data-delay="200">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">📊</div>
+          <h3>Progress Tracking</h3>
+          <p>Track weight, calories, workouts and body measurements with beautiful charts and weekly summaries.</p>
+        </div>
+        <div class="feature-card" data-delay="300">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">🧘</div>
+          <h3>Ayurveda Integration</h3>
+          <p>Incorporate traditional Kerala Ayurvedic practices into your daily wellness routine for holistic health.</p>
+        </div>
+        <div class="feature-card" data-delay="400">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #e8eaf6, #c5cae9);">👨‍⚕️</div>
+          <h3>Expert Nutritionists</h3>
+          <p>Connect 1-on-1 with certified Kerala nutritionists who understand your local food culture and preferences.</p>
+        </div>
+        <div class="feature-card" data-delay="500">
+          <div class="feature-icon" style="background: linear-gradient(135deg, #e0f2f1, #b2dfdb);">🌊</div>
+          <h3>Community Support</h3>
+          <p>Join a thriving community of 12,000+ members across Kerala sharing recipes, tips, and motivation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WORKOUTS ==================== -->
+  <section id="workouts" class="workouts-section">
+    <div class="container">
+      <div class="section-tag">Exercise Library</div>
+      <h2 class="section-title">Popular <span class="gradient-text">Workout Plans</span></h2>
+      <p class="section-subtitle">Choose from hundreds of scientifically-designed workout programs for every goal.</p>
+
+      <div class="workout-tabs">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="beginner">Beginner</button>
+        <button class="tab-btn" data-tab="intermediate">Intermediate</button>
+        <button class="tab-btn" data-tab="advanced">Advanced</button>
+      </div>
+
+      <div class="workouts-grid">
+        <div class="workout-card" data-category="beginner">
+          <div class="workout-badge beginner">Beginner</div>
+          <div class="workout-emoji">🏃‍♀️</div>
+          <h3>Morning Walk & Stretch</h3>
+          <p>Perfect 30-minute morning routine combining light walking and full-body stretches.</p>
+          <div class="workout-meta">
+            <span>⏱ 30 min</span>
+            <span>🔥 150 kcal</span>
+            <span>📅 Daily</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="openModal('workout1')">View Plan</button>
+        </div>
+
+        <div class="workout-card" data-category="intermediate">
+          <div class="workout-badge intermediate">Intermediate</div>
+          <div class="workout-emoji">🏋️</div>
+          <h3>Full Body Strength</h3>
+          <p>Comprehensive 45-minute strength training targeting all major muscle groups.</p>
+          <div class="workout-meta">
+            <span>⏱ 45 min</span>
+            <span>🔥 320 kcal</span>
+            <span>📅 3x/week</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="openModal('workout2')">View Plan</button>
+        </div>
+
+        <div class="workout-card featured" data-category="intermediate">
+          <div class="workout-badge featured-badge">⭐ Popular</div>
+          <div class="workout-emoji">🧘‍♂️</div>
+          <h3>Kerala Yoga Flow</h3>
+          <p>Traditional Kerala yoga blended with modern flexibility training. Calm mind, strong body.</p>
+          <div class="workout-meta">
+            <span>⏱ 60 min</span>
+            <span>🔥 200 kcal</span>
+            <span>📅 5x/week</span>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="openModal('workout3')">View Plan</button>
+        </div>
+
+        <div class="workout-card" data-category="advanced">
+          <div class="workout-badge advanced">Advanced</div>
+          <div class="workout-emoji">⚡</div>
+          <h3>HIIT Cardio Blast</h3>
+          <p>High-intensity interval training for maximum fat burn and cardiovascular fitness.</p>
+          <div class="workout-meta">
+            <span>⏱ 25 min</span>
+            <span>🔥 450 kcal</span>
+            <span>📅 4x/week</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="openModal('workout4')">View Plan</button>
+        </div>
+
+        <div class="workout-card" data-category="beginner">
+          <div class="workout-badge beginner">Beginner</div>
+          <div class="workout-emoji">🚴</div>
+          <h3>Cycling & Cardio</h3>
+          <p>Low-impact cycling routine perfect for building stamina without joint stress.</p>
+          <div class="workout-meta">
+            <span>⏱ 40 min</span>
+            <span>🔥 280 kcal</span>
+            <span>📅 3x/week</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="openModal('workout5')">View Plan</button>
+        </div>
+
+        <div class="workout-card" data-category="advanced">
+          <div class="workout-badge advanced">Advanced</div>
+          <div class="workout-emoji">🏊</div>
+          <h3>Swim & Tone</h3>
+          <p>Full body aquatic workout perfect for Kerala's coastal lifestyle and warm weather.</p>
+          <div class="workout-meta">
+            <span>⏱ 50 min</span>
+            <span>🔥 380 kcal</span>
+            <span>📅 3x/week</span>
+          </div>
+          <button class="btn btn-outline btn-sm" onclick="openModal('workout6')">View Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NUTRITION / KERALA DIET ==================== -->
+  <section id="nutrition" class="nutrition-section">
+    <div class="container">
+      <div class="section-tag">Kerala Dieting Plans</div>
+      <h2 class="section-title">Authentic Kerala <span class="gradient-text">Diet Programs</span></h2>
+      <p class="section-subtitle">Scientifically balanced meal plans rooted in Kerala's rich culinary traditions — for every health goal.</p>
+
+      <div class="diet-grid">
+        <div class="diet-card">
+          <div class="diet-header" style="background: linear-gradient(135deg, #1a5c2e, #2e7d47);">
+            <div class="diet-icon">🍃</div>
+            <div class="diet-cal">1600 kcal/day</div>
+          </div>
+          <div class="diet-body">
+            <h3>Weight Loss Plan</h3>
+            <p>Low-calorie Kerala meals focused on fresh vegetables, lean fish, and steamed preparations.</p>
+            <ul class="meal-list">
+              <li>
+                <div class="meal-time">Breakfast</div>
+                <div class="meal-name">Puttu + Kadala Curry + Papaya</div>
+              </li>
+              <li>
+                <div class="meal-time">Lunch</div>
+                <div class="meal-name">Brown Rice + Sambar + Thoran + Fish Curry</div>
+              </li>
+              <li>
+                <div class="meal-time">Snack</div>
+                <div class="meal-name">Tender Coconut Water + Banana</div>
+              </li>
+              <li>
+                <div class="meal-time">Dinner</div>
+                <div class="meal-name">Kanji (Rice Porridge) + Papad + Pickle</div>
+              </li>
+            </ul>
+            <div class="diet-tags">
+              <span class="tag">Low Carb</span>
+              <span class="tag">High Fiber</span>
+              <span class="tag">Traditional</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm full-width">Get This Plan</a>
+          </div>
+        </div>
+
+        <div class="diet-card featured-diet">
+          <div class="diet-header" style="background: linear-gradient(135deg, #1565C0, #1976D2);">
+            <div class="diet-icon">⭐</div>
+            <div class="diet-cal">2200 kcal/day</div>
+            <div class="diet-popular">MOST POPULAR</div>
+          </div>
+          <div class="diet-body">
+            <h3>Balanced Sadya Plan</h3>
+            <p>Complete nutrition inspired by the legendary Kerala Sadya feast — balanced macros, maximum taste.</p>
+            <ul class="meal-list">
+              <li>
+                <div class="meal-time">Breakfast</div>
+                <div class="meal-name">Idiyappam + Egg Curry + Banana</div>
+              </li>
+              <li>
+                <div class="meal-time">Lunch</div>
+                <div class="meal-name">White Rice + Dal + Avial + Olan + Fish/Chicken</div>
+              </li>
+              <li>
+                <div class="meal-time">Snack</div>
+                <div class="meal-name">Unniyappam + Black Tea</div>
+              </li>
+              <li>
+                <div class="meal-time">Dinner</div>
+                <div class="meal-name">Chapati + Mixed Vegetable Curry + Curd</div>
+              </li>
+            </ul>
+            <div class="diet-tags">
+              <span class="tag">Balanced</span>
+              <span class="tag">High Protein</span>
+              <span class="tag">Sadya-Inspired</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm full-width">Get This Plan</a>
+          </div>
+        </div>
+
+        <div class="diet-card">
+          <div class="diet-header" style="background: linear-gradient(135deg, #4a148c, #6a1b9a);">
+            <div class="diet-icon">💪</div>
+            <div class="diet-cal">2800 kcal/day</div>
+          </div>
+          <div class="diet-body">
+            <h3>Muscle Gain Plan</h3>
+            <p>High-protein Kerala diet plan designed for athletes and those looking to build lean muscle mass.</p>
+            <ul class="meal-list">
+              <li>
+                <div class="meal-time">Breakfast</div>
+                <div class="meal-name">Egg Appam + Chicken Stew + Dates</div>
+              </li>
+              <li>
+                <div class="meal-time">Lunch</div>
+                <div class="meal-name">Rice + Egg Roast + Kalan + Grilled Fish</div>
+              </li>
+              <li>
+                <div class="meal-time">Snack</div>
+                <div class="meal-name">Boiled Chickpeas + Coconut Milk Smoothie</div>
+              </li>
+              <li>
+                <div class="meal-time">Dinner</div>
+                <div class="meal-name">Pathiri + Mutton/Chicken Curry + Raita</div>
+              </li>
+            </ul>
+            <div class="diet-tags">
+              <span class="tag">High Protein</span>
+              <span class="tag">Muscle Building</span>
+              <span class="tag">Malabar Style</span>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-sm full-width">Get This Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kerala Ingredients Feature -->
+      <div class="ingredients-section">
+        <h3 class="ingredients-title">🌿 Key Kerala Superfoods We Use</h3>
+        <div class="ingredients-grid">
+          <div class="ingredient-item"><span>🥥</span><span>Coconut</span></div>
+          <div class="ingredient-item"><span>🍌</span><span>Banana</span></div>
+          <div class="ingredient-item"><span>🐟</span><span>Kerala Fish</span></div>
+          <div class="ingredient-item"><span>🌾</span><span>Red Rice</span></div>
+          <div class="ingredient-item"><span>🫘</span><span>Kadala</span></div>
+          <div class="ingredient-item"><span>🥬</span><span>Cheera</span></div>
+          <div class="ingredient-item"><span>🍠</span><span>Tapioca</span></div>
+          <div class="ingredient-item"><span>🫙</span><span>Coconut Oil</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BMI CALCULATOR ==================== -->
+  <section id="calculator" class="calculator-section">
+    <div class="container">
+      <div class="section-tag">Health Tools</div>
+      <h2 class="section-title">BMI & Calorie <span class="gradient-text">Calculator</span></h2>
+      <p class="section-subtitle">Know your body metrics and get a personalized calorie target for your goal.</p>
+
+      <div class="calc-wrapper">
+        <div class="calc-form">
+          <div class="calc-tabs">
+            <button class="calc-tab active" id="bmiTab" onclick="switchCalc('bmi')">BMI Calculator</button>
+            <button class="calc-tab" id="calTab" onclick="switchCalc('cal')">Calorie Calculator</button>
+          </div>
+
+          <!-- BMI Calc -->
+          <div id="bmiCalc" class="calc-panel">
+            <div class="form-group">
+              <label for="heightInput">Height (cm)</label>
+              <input type="number" id="heightInput" class="form-input" placeholder="e.g. 165" min="100" max="250" />
+            </div>
+            <div class="form-group">
+              <label for="weightInput">Weight (kg)</label>
+              <input type="number" id="weightInput" class="form-input" placeholder="e.g. 65" min="30" max="300" />
+            </div>
+            <div class="form-group">
+              <label for="ageInput">Age</label>
+              <input type="number" id="ageInput" class="form-input" placeholder="e.g. 28" min="10" max="100" />
+            </div>
+            <div class="form-group">
+              <label for="genderInput">Gender</label>
+              <select id="genderInput" class="form-input">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <button class="btn btn-primary btn-lg full-width" onclick="calculateBMI()">Calculate BMI</button>
+          </div>
+
+          <!-- Calorie Calc -->
+          <div id="calCalc" class="calc-panel" style="display:none;">
+            <div class="form-group">
+              <label for="calHeight">Height (cm)</label>
+              <input type="number" id="calHeight" class="form-input" placeholder="e.g. 165" />
+            </div>
+            <div class="form-group">
+              <label for="calWeight">Weight (kg)</label>
+              <input type="number" id="calWeight" class="form-input" placeholder="e.g. 65" />
+            </div>
+            <div class="form-group">
+              <label for="calAge">Age</label>
+              <input type="number" id="calAge" class="form-input" placeholder="e.g. 28" />
+            </div>
+            <div class="form-group">
+              <label for="calGender">Gender</label>
+              <select id="calGender" class="form-input">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="activityLevel">Activity Level</label>
+              <select id="activityLevel" class="form-input">
+                <option value="1.2">Sedentary (Office Work)</option>
+                <option value="1.375">Lightly Active (1-3 days/week)</option>
+                <option value="1.55" selected>Moderately Active (3-5 days/week)</option>
+                <option value="1.725">Very Active (6-7 days/week)</option>
+                <option value="1.9">Extremely Active (Physical Job)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fitnessGoal">Your Goal</label>
+              <select id="fitnessGoal" class="form-input">
+                <option value="lose">Lose Weight</option>
+                <option value="maintain" selected>Maintain Weight</option>
+                <option value="gain">Gain Muscle</option>
+              </select>
+            </div>
+            <button class="btn btn-primary btn-lg full-width" onclick="calculateCalories()">Calculate Calories</button>
+          </div>
+        </div>
+
+        <div class="calc-result" id="calcResult">
+          <div class="result-placeholder">
+            <div class="result-icon">📊</div>
+            <p>Fill in the form and hit Calculate to see your personalized health metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROGRESS TRACKER ==================== -->
+  <section class="tracker-section">
+    <div class="container">
+      <div class="section-tag">Progress Dashboard</div>
+      <h2 class="section-title">Track Your <span class="gradient-text">Transformation</span></h2>
+      <p class="section-subtitle">Visual insights into your weekly progress — weight, calories, workout streaks and more.</p>
+
+      <div class="tracker-grid">
+        <div class="tracker-card">
+          <div class="tracker-header">
+            <h4>Weekly Calorie Burn</h4>
+            <span class="trend up">↑ 12%</span>
+          </div>
+          <div class="chart-bars">
+            <div class="bar-wrapper"><div class="bar" style="height: 60%;" data-val="1200"></div><span>Mon</span></div>
+            <div class="bar-wrapper"><div class="bar" style="height: 80%;" data-val="1600"></div><span>Tue</span></div>
+            <div class="bar-wrapper"><div class="bar" style="height: 45%;" data-val="900"></div><span>Wed</span></div>
+            <div class="bar-wrapper"><div class="bar" style="height: 90%;" data-val="1800"></div><span>Thu</span></div>
+            <div class="bar-wrapper"><div class="bar" style="height: 70%;" data-val="1400"></div><span>Fri</span></div>
+            <div class="bar-wrapper"><div class="bar active-bar" style="height: 85%;" data-val="1700"></div><span>Sat</span></div>
+            <div class="bar-wrapper"><div class="bar" style="height: 30%;" data-val="600"></div><span>Sun</span></div>
+          </div>
+        </div>
+
+        <div class="tracker-card">
+          <div class="tracker-header">
+            <h4>Body Metrics</h4>
+            <span class="trend up">On Track</span>
+          </div>
+          <div class="metric-list">
+            <div class="metric-item">
+              <div class="metric-label">Weight</div>
+              <div class="metric-bar-wrap"><div class="metric-bar" style="width: 72%"></div></div>
+              <div class="metric-value">72 kg</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Body Fat</div>
+              <div class="metric-bar-wrap"><div class="metric-bar fat" style="width: 22%"></div></div>
+              <div class="metric-value">22%</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Muscle</div>
+              <div class="metric-bar-wrap"><div class="metric-bar muscle" style="width: 58%"></div></div>
+              <div class="metric-value">58%</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-label">Hydration</div>
+              <div class="metric-bar-wrap"><div class="metric-bar hydration" style="width: 80%"></div></div>
+              <div class="metric-value">80%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tracker-card streak-card">
+          <div class="tracker-header">
+            <h4>Workout Streak</h4>
+            <span class="trend fire">🔥 Hot</span>
+          </div>
+          <div class="streak-number">21</div>
+          <div class="streak-label">Days in a row</div>
+          <div class="streak-dots">
+            <div class="dot done"></div><div class="dot done"></div><div class="dot done"></div>
+            <div class="dot done"></div><div class="dot done"></div><div class="dot done"></div>
+            <div class="dot today"></div>
+          </div>
+          <p class="streak-msg">🎉 Keep it up! 9 more days for your monthly badge!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRAINERS ==================== -->
+  <section id="trainers" class="trainers-section">
+    <div class="container">
+      <div class="section-tag">Meet the Experts</div>
+      <h2 class="section-title">Your Certified <span class="gradient-text">Trainers</span></h2>
+      <p class="section-subtitle">Kerala's finest fitness coaches and nutritionists, dedicated to your transformation.</p>
+
+      <div class="trainers-grid">
+        <div class="trainer-card">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #1a5c2e, #56ab2f);">👨‍⚕️</div>
+          <h3>Dr. Arun Nair</h3>
+          <div class="trainer-role">Chief Nutritionist</div>
+          <div class="trainer-location">📍 Thiruvananthapuram</div>
+          <p class="trainer-bio">15+ years in clinical nutrition. Specialist in Kerala Ayurvedic diet therapy and metabolic health.</p>
+          <div class="trainer-stats">
+            <div class="t-stat"><strong>500+</strong><span>Clients</span></div>
+            <div class="t-stat"><strong>4.9⭐</strong><span>Rating</span></div>
+            <div class="t-stat"><strong>15yr</strong><span>Experience</span></div>
+          </div>
+          <button class="btn btn-primary btn-sm full-width">Book Consultation</button>
+        </div>
+
+        <div class="trainer-card featured-trainer">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #1565C0, #42a5f5);">👩‍🏫</div>
+          <h3>Priya Menon</h3>
+          <div class="trainer-role">Senior Fitness Coach</div>
+          <div class="trainer-location">📍 Kochi</div>
+          <p class="trainer-bio">National-level athlete turned coach. Specializes in women's fitness, yoga, and postpartum wellness.</p>
+          <div class="trainer-stats">
+            <div class="t-stat"><strong>800+</strong><span>Clients</span></div>
+            <div class="t-stat"><strong>5.0⭐</strong><span>Rating</span></div>
+            <div class="t-stat"><strong>10yr</strong><span>Experience</span></div>
+          </div>
+          <button class="btn btn-primary btn-sm full-width">Book Consultation</button>
+        </div>
+
+        <div class="trainer-card">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #4a148c, #ab47bc);">🧑‍🏋️</div>
+          <h3>Rahul Krishnan</h3>
+          <div class="trainer-role">Strength & HIIT Coach</div>
+          <div class="trainer-location">📍 Kozhikode</div>
+          <p class="trainer-bio">Certified NASM trainer with expertise in HIIT, functional training and sports nutrition.</p>
+          <div class="trainer-stats">
+            <div class="t-stat"><strong>350+</strong><span>Clients</span></div>
+            <div class="t-stat"><strong>4.8⭐</strong><span>Rating</span></div>
+            <div class="t-stat"><strong>8yr</strong><span>Experience</span></div>
+          </div>
+          <button class="btn btn-primary btn-sm full-width">Book Consultation</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-tag">Success Stories</div>
+      <h2 class="section-title">Real Results from <span class="gradient-text">Real Keralites</span></h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Lost 12 kg in 4 months with the Kerala Weight Loss plan. I still eat my favorite food — puttu, kadala, fish curry — and I'm healthier than ever!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩</div>
+            <div><strong>Sreelakshmi R.</strong><br /><small>Thrissur · Lost 12 kg</small></div>
+          </div>
+        </div>
+        <div class="testimonial-card featured-testimonial">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p>"As a working professional in Kochi, I couldn't afford to skip meals. KeralFit gave me a diet plan that fits my busy schedule perfectly using local ingredients."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨</div>
+            <div><strong>Vishnu P.</strong><br /><small>Kochi · Gained 5 kg muscle</small></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+          <p>"The Ayurveda integration is amazing! Combined with the yoga program, my energy levels and sleep quality have improved drastically. Truly Kerala wellness!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩‍🦱</div>
+            <div><strong>Meera K.</strong><br /><small>Thiruvananthapuram · Better lifestyle</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING ==================== -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="section-tag">Membership Plans</div>
+      <h2 class="section-title">Simple, Affordable <span class="gradient-text">Pricing</span></h2>
+      <p class="section-subtitle">Choose the plan that fits your goals. All plans include Kerala diet plans and community access.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">299</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-desc">Perfect for beginners starting their fitness journey.</p>
+          <ul class="plan-features">
+            <li>✅ 2 Basic Workout Plans</li>
+            <li>✅ 1 Kerala Diet Plan</li>
+            <li>✅ BMI & Calorie Calculator</li>
+            <li>✅ Community Access</li>
+            <li>❌ Trainer Consultation</li>
+            <li>❌ Progress Tracking</li>
+            <li>❌ Custom Meal Plans</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-lg full-width">Get Started</a>
+        </div>
+
+        <div class="pricing-card popular-plan">
+          <div class="popular-badge">MOST POPULAR</div>
+          <div class="plan-name">Pro Wellness</div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">799</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-desc">For serious health seekers who want full guidance.</p>
+          <ul class="plan-features">
+            <li>✅ Unlimited Workout Plans</li>
+            <li>✅ All 3 Kerala Diet Plans</li>
+            <li>✅ BMI & Calorie Calculator</li>
+            <li>✅ Community Access</li>
+            <li>✅ 2 Trainer Consultations/month</li>
+            <li>✅ Progress Tracking Dashboard</li>
+            <li>❌ Custom Meal Plans</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-lg full-width">Join Pro</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Elite Transform</div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">1499</span>
+            <span class="period">/month</span>
+          </div>
+          <p class="plan-desc">VIP experience with fully personalized coaching.</p>
+          <ul class="plan-features">
+            <li>✅ Unlimited Workout Plans</li>
+            <li>✅ All Kerala Diet Plans</li>
+            <li>✅ BMI & Calorie Calculator</li>
+            <li>✅ Community Access</li>
+            <li>✅ Unlimited Trainer Consultations</li>
+            <li>✅ Advanced Progress Tracking</li>
+            <li>✅ Custom Meal Plans</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-lg full-width">Go Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEWSLETTER ==================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-wrapper">
+        <div class="newsletter-text">
+          <h2>Stay Fit with Free Weekly Tips! 🌿</h2>
+          <p>Get healthy Kerala recipes, workout tips, and wellness advice delivered to your inbox every week.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="subscribeNewsletter(event)">
+          <input type="email" class="form-input" placeholder="Enter your email address" id="nlEmail" required />
+          <button type="submit" class="btn btn-primary">Subscribe Free</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Contact <span class="gradient-text">Us</span></h2>
+      <p class="section-subtitle">Have questions? Our team is here to help you start your wellness journey.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <p>MG Road, Ernakulam, Kochi, Kerala - 682011</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <strong>Email</strong>
+              <p>hello@keralfit.in</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⏰</div>
+            <div>
+              <strong>Working Hours</strong>
+              <p>Mon–Sat: 6:00 AM – 9:00 PM</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+            <a href="#" class="social-btn" aria-label="Facebook">👥</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+            <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" onsubmit="submitContact(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" class="form-input" placeholder="+91 XXXXX XXXXX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" class="form-input" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactGoal">Your Fitness Goal</label>
+            <select id="contactGoal" class="form-input">
+              <option>Weight Loss</option>
+              <option>Muscle Gain</option>
+              <option>General Fitness</option>
+              <option>Kerala Diet Plan</option>
+              <option>Ayurveda Wellness</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" class="form-input form-textarea" placeholder="Tell us about your fitness goals..." rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg full-width">Send Message 🌿</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="font-size:1.5rem">🌿 Keral<strong>Fit</strong></div>
+          <p>Kerala's premier fitness and nutrition platform — blending tradition with science for holistic wellness.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#workouts">Workouts</a></li>
+            <li><a href="#nutrition">Diet Plans</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Diet Plans</h4>
+          <ul>
+            <li><a href="#nutrition">Weight Loss</a></li>
+            <li><a href="#nutrition">Balanced Sadya</a></li>
+            <li><a href="#nutrition">Muscle Gain</a></li>
+            <li><a href="#nutrition">Ayurveda Plan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 KeralFit. Made with 🌿 in Kerala, India.</p>
+        <p>Promoting wellness through authentic Kerala tradition.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== WORKOUT MODAL ==================== -->
+  <div id="workoutModal" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST ==================== -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button id="backToTop" class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
